@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Tabel Layout</title>
+    <style>
+        table{
+            width: 100%;
+            height: 100%;
+            background-color:#4B352A;
+        }
+        td{
+            background-color:#FFFBDE;
+        }
+        .row-one{
+            height: 80px;
+            font-size: 40px;
+            text-align: center;
+            font-family: cursive;
+        }
+
+        .row-two{
+            background-color:#FF90BB;
+            height: 500px;
+            text-align: center;
+        }
+
+        .row-three{
+            background-color: #8ACCD5;
+            height: 500px;
+            text-align: center;
+        }
+
+        .row-four{
+            background-color: #4ED7F1;
+            height: 500px;
+            text-align: center;
+        }
+
+        h1{
+            font-size: 40px;
+            font-weight: 700;
+            font-family: monospace;
+        }
+
+        h2{
+            font-size: 40px;
+            font-weight: 700;
+        }
+
+        span{
+            font-size: 50px;
+            color: #252525;
+        }
+
+        p{
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+
+        <!-- Row One -->
+
+         <tr class="row-one">
+            <td>Home</td>
+            <td>About</td>
+            <td>Project</td>
+            <td>Contact</td>
+         </tr>
+
+         <!-- Row Two -->
+
+         <tr >
+            <td colspan="4" class="row-two">
+                <h1>Welcome To My Website</h1>
+                <span>My name is <b>Sarthak</b></span>
+                <h2>I Am a web developer</h2>
+            </td>
+         </tr>
+
+          <!-- Row Three -->
+
+          <tr>
+            <td colspan="4" class="row-three">
+                <p>I im studying in 8th class in Mount Carmel Convent School.
+                    My hobby is to play Cricket.
+                    Im a student in enjoy programming.
+                </p>
+            </td>
+         </tr>
+
+           <!-- Row Four -->
+
+           <tr>
+            <td colspan="4" class="row-four">
+                <p><b>Email:</b> rsarthakchaudhari@gmail.com</p>
+                <p><b>Phone:</b> 1234567890</p>
+                <p><b>GitHub:</b> click here</p>
+                <p><b>Adsress:</p>
+            </td>
+         </tr>
+
+           <!-- Row Five -->
+
+           <tr class="row-one">
+            <td>Email Id</td>
+            <td>Phone No.</td>
+            <td>Github</td>
+            <td>Adress</td>
+         </tr>
+    </table>
+</body>
+</html>

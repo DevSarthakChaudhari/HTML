@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media queries example</title>
+    <style>
+        body{
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    background-color: aqua; 
+}
+
+@media (max-width:300px){
+    .container{
+        background-color:rgb(239, 15, 15);
+    }
+}
+
+@media (min-width:300px) and (max-width:500px){
+    .container{
+        background-color:rgb(141, 229, 126);
+    }
+}
+
+@media(min-width:500px) and (max-width:700px){
+    .container{
+        background-color:rgb(255, 187, 0);
+    }
+}
+
+@media(min-width:700px) and (max-width:900px){
+    .container{
+        background-color:rgb(3, 101, 248);
+    }
+}
+
+@media(min-width:900px) and (max-width:1100px){
+    .container{
+        background-color:rgb(94, 255, 0);
+    }
+}
+
+@media(min-width:1100px) and(max-width:1300px){
+    .container{
+        background-color:#819A91;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container"></div>
+</body>
+</html>
