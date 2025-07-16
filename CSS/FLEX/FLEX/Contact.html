@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sarthak Chaudhari Portfolio</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      width: 100vw; height: 100vh;
+      font-family: Cambria, serif;
+      color: #fff;
+      background: url("https://images.unsplash.com/photo-1519389950473-47ba0277781c") no-repeat center/cover;
+      position: relative;
+    }
+
+    /* Animated dark overlay */
+    body::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0);
+      animation: overlayFade 2s forwards;
+      z-index: -1;
+    }
+
+    /* Intro text animation */
+    .intro-text {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: textSlide 1s ease-out 1s forwards;
+      padding-left: 50px;
+    }
+
+    @keyframes overlayFade {
+      from { background: rgba(0, 0, 0, 0); }
+      to   { background: rgba(0, 0, 0, 0.6); }
+    }
+
+    @keyframes textSlide {
+      from { opacity: 0; transform: translateY(20px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .header {
+
+      display: flex; justify-content: space-between; align-items: center;
+      height: 10%; background-color: #272727cc; padding: 0 20px;
+      opacity: 0;
+      animation: fadeInLeft 1s ease-out 0.5s forwards;
+    }
+
+    @keyframes fadeInLeft {
+      from { opacity: 0; transform: translateX(-50px); }
+      to   { opacity: 1; transform: translateX(0); }
+    }
+
+    .nav-links {
+      display: flex; gap: 30px;
+    }
+    .nav-links a {
+      color: #fff; font-size: 18px; text-decoration: none;
+      transition: color 0.3s;
+    }
+    .nav-links a:hover { color: aqua; }
+
+    .mid-container {
+      height: 90%; display: flex; align-items: center;
+    }
+    .intro-text h2 { font-size: 24px; }
+    .intro-text h1 {
+      font-size: 48px; color: aqua; margin: 10px 0;
+    }
+    .intro-text h3 { font-size: 28px; margin-top: 20px; }
+    .intro-text p { margin-top: 20px; font-size: 20px; max-width: 600px; }
+
+    @media (max-width: 768px) {
+      .header { flex-direction: column; height: auto; padding: 10px; }
+      .nav-links { flex-direction: column; gap: 10px; margin-top: 10px; }
+      .intro-text h1 { font-size: 36px; }
+      .intro-text h3, .intro-text h2, .intro-text p { font-size: 18px; }
+      .mid-container { padding: 0 20px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Sarthak Chaudhari</h1>
+    <div class="nav-links">
+      <a href="./portfolio-home-page.html">Home</a>
+      <a href="./about.html">About</a>
+      <a href="./Resume.html">Resume</a>
+      <a href="./Project.html">Project</a>
+      <a href="./Contact.html">Contact</a>
+    </div>
+  </div>
+
+  <div class="mid-container">
+    <div class="intro-text">
+      <h2>Hi, I'm</h2>
+      <h1>Sarthak Chaudhari</h1>
+      <h3>Full‑Stack Developer</h3>
+      <p>“A designer knows he has achieved perfection not when there is nothing left to add, but when there is nothing left to take away.”</p>
+    </div>
+  </div>
+</body>
+</html>

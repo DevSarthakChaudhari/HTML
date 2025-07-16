@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Dashboard Overviev</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+
+        .main-container {
+            width: 100%;
+            height: 100%;
+           
+        }
+
+        .top-container {
+            width: 100%;
+            height: 20%;
+         
+        }
+
+        .heading {
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            font-size: 50px;
+            
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .bottom-container {
+            width: 100%;
+            height: 40%;
+          
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .box {
+            width: 20%;
+            height: 80%;
+            background-color: gray;
+        }
+
+        .box-icon {
+            font-size: 50px;
+            width: 10%;
+            height: 10%;
+            
+            margin-left:20px;
+            margin-top:20px;
+        }
+        .box-title{
+            font-size:20px;
+            margin-left:20px;
+            margin-top:40px;
+        }
+        .box-value{
+            font-size: 40px;
+            font-weight: 700;
+            margin-left: 20px;
+            margin-top:20px;
+        }
+        .box-text{
+            font-size:30px;
+            margin-left:20px;
+            margin-top:20px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Mian container starts -->
+    <div class="main-container">
+
+        <!-- header starts -->
+
+        <div class="top-container">
+            <div class="heading">Dashboard Overviev</div>
+        </div>
+
+        <!-- Mid container starts-->
+        <div class="bottom-container">
+            <div class="box">
+                <div class="box-icon">📈</div>
+            <div class="box-title">Total Revenue</div>
+            <div class="box-value">12,000</div>
+            <div class="box-text">12% from last month</div>
+            </div>
+            
+            <div class="box">
+                <div class="box-icon">🦸🏻</div>
+            <div class="box-title">New Users</div>
+            <div class="box-value">150</div>
+            <div class="box-text">8% from last month</div>
+            </div>
+            
+            <div class="box">
+                <div class="box-icon">📦</div>
+                <div class="box-title">Orders</div>
+                <div class="box-value">200</div>
+                <div class="box-text">3% from last month</div>
+            </div>
+           
+            <div class="box">
+                <div class="box-icon">💥</div>
+                <div class="box-title">Satisfaction</div>
+                <div class="box-value">5,000</div>
+                <div class="box-text">2% from last month</div>
+            </div>
+           
+        </div>
+    </div>
+</body>
+
+</html>
