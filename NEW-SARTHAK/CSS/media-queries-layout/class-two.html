@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+
+        .main-container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        @media(max-width:768px) {
+            .main-container {
+                flex-direction: column;
+            }
+
+            .product-image {
+                width: 90%;
+                height: 45%;
+
+            }
+
+            .product-detail {
+                width: 90%;
+                height: 55%;
+
+            }
+
+            p {
+                font-size: 18px;
+            }
+
+            .first {
+                height: 25%;
+            }
+
+            .reviev,
+            .reviev-text {
+                width: 100%;
+            }
+        }
+
+        /* .productimage section css */
+        .product-image {
+            width: 45%;
+            height: 70%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .product-large-image {
+            width: 90%;
+            height: 70%;
+        }
+
+        .product-images {
+            width: 90%;
+            height: 70%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .product-imagee {
+            width: 90%;
+            height: 70%;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: fill;
+        }
+
+        .product-detail {
+            width: 45%;
+
+        }
+
+        .first {
+            width: 90%;
+            height: 30%;
+            padding-left: 20px;
+
+        }
+
+        h2 {
+            margin-top: 0;
+            padding: 0;
+            font-size: 30px;
+        }
+
+        h3 {
+            margin: 0;
+            padding: 0;
+            font-size: 30px;
+        }
+
+        p {
+            font-size: 25px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .second {
+            width: 100%;
+            height: 8%;
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+
+        button {
+            width: 150px;
+            height: 100%;
+            font-size: 20px;
+            font-weight: 700;
+            background-color: coral;
+            color: white;
+            border-radius: 9px;
+        }
+
+        .third {
+            width: 100%;
+            height: 10%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+
+        .four {
+            width: 90%;
+            height: 8%;
+        }
+
+        .six {
+            width: 90%;
+            height: 40%;
+        }
+
+        .reviev {
+            width: 90%;
+            height: 90%;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            justify-content: space-between;
+        }
+
+        .reviev-text {
+            width: 90%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 10px;
+            background-color: lightblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+
+        <!-- Product images section -->
+        <div class="product-image">
+            <div class="product-large-image">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJNBmPMFHR6g5Prmz4SAUbaa3lCTSpK-irLg&s"
+                    width="100%" height="100%">
+            </div>
+            <div class="product-images">
+                <div class="product-images">
+                    <img src="https://techtoro.io/image/cache/catalog/Blogs/macbook%20m4%20news/mac-air-m4-1920x1080.jpg"
+                        width="100%">
+                </div>
+                <div class="product-imagee">
+                    <img src="https://media-ik.croma.com/prod/https://media.croma.com/image/upload/v1709828502/Croma%20Assets/Computers%20Peripherals/Laptop/Images/305387_lvycmd.png"
+                        width="100%">
+                </div>
+                <div class="product-imagee">
+                    <img src="https://images.moneycontrol.com/static-mcnews/2025/01/20250104061547_MacBook-Ai.jpeg?impolicy=website&width=770&height=431"
+                        width="100%">
+                </div>
+                <div class="product-imagee">
+                    <img src="https://static1.pocketlintimages.com/wordpress/wp-content/uploads/wm/161396-laptops-review-hands-on-macbook-air-review-image1-v2jzcb3rqd.jpg"
+                        width="100%">
+                </div>
+            </div>
+        </div>
+        <!-- Product details section -->
+        <div class="product-detail">
+            <div class="first">
+                <h2>Macbook Air</h2>
+                <h3>$150</h3>
+                <p>Introducing the new MacBook Air and Mac Studio. Built for Apple Intelligence. Get up to 12 months of
+                    No Cost EMI plus up to ₹8000 instant cashback.</p>
+            </div>
+            <div class="second">
+                <button>Buy Now</button>
+            </div>
+            <div class="third">
+                <h1>Specifications</h1>
+            </div>
+            <div class="second">
+                <p>Feature 1: High performance processor</p>
+                <p>Feature 1: High performance processor</p>
+                <p>Feature 1: High performance processor</p>
+            </div>
+            <div class="four">
+                <h1>Customer Reviews</h1>
+            </div>
+            <div class="six">
+                <div class="reviev">
+                    <p class="reviev-text">The product is very good - <cite>John Doe</cite></p>
+                </div>
+
+                <div class="reviev"></div>
+                <p class="reviev-text">The product is very good - <cite>John Doe</cite></p>
+            </div>
+
+            <div class="reviev"></div>
+            <p class="reviev-text">The product is very good - <cite>John Doe</cite></p>
+        </div>
+
+    </div>
+    </div>
+    </div>
+</body>
+
+</html>
