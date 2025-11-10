@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>variable</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+
+        .main-container{
+            width: 40%;
+            height: 50%;
+            background-color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <p id="display"></p>
+        <p id="display-2"></p>
+        <button onclick="getMoney()">Get Money</button>
+        <script>
+
+
+            let india = 1000
+            document.getElementById("display").innerHTML = india
+
+            let pakisthan = 0
+            function getMoney() {
+                pakisthan = prompt("Enter amount")
+                india = india - Number(pakisthan)
+                document.getElementById("display-2").innerHTML = india
+            }
+
+
+
+        </script>
+    </div>
+</body>
+
+</html>
