@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+
+        .main-container {
+            width: 100%;
+            height: 100%;
+            background-color: aquamarine;
+
+        }
+
+        .display{
+            width: 25%;
+            height: 60%;
+            background-color: rgb(10, 154, 243);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+
+        <div class="display">
+        <h3>Current Balance:</h3>
+        <h3 id="display"></h3>
+    </div>
+        <input type="number" id="input" placeholder="">
+        <button onclick="myFunctionTwo()">Submit</button>
+    </div>
+    <script>
+
+        let balance = 10000;
+        document.getElementById("display").innerHTML = balance;
+        function myFunctionTwo() {
+            let amount = document.getElementById("input").value;
+            balance = balance - Number(amount)
+            document.getElementById("display").innerHTML = balance;
+        }
+    </script>
+
+</body>
+
+</html>

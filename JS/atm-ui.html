@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            width: 100vw;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+
+        .main-container{
+            width: 100%;
+            height: 100%;
+            background-color: aquamarine;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .page{
+            width: 30%;
+            height: 60%;
+            background-color: azure;
+            
+        }
+
+        .withdrawl{
+            width: 80%;
+            height: 15%;
+            margin-top:5% ;
+            margin-left: 20%;
+            font-size: 30px;
+            font-family: 'Courier New', Courier, monospace;
+            color: palevioletred;
+        }
+
+        .text{
+            width:80%;
+            height: 30%;
+            background-color: aqua;
+            margin-top:5% ;
+            margin-left: 10%;
+            font-size: 25px;
+            font-family: 'Courier New', Courier, monospace;
+            color: palevioletred;
+        }
+
+        .input{
+            width: 80%;
+            height: 15%;
+            background-color: aqua;
+            margin-top:5% ;
+            margin-left: 10%;
+        }
+
+        .button{
+            width: 80%;
+            height: 15%;
+            background-color: aqua;
+            margin-top:5% ;
+            margin-left: 10%;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="page">
+            <div class="withdrawl">ATM withdrawl</div>
+            <div class="text"> <p id="display"></p>
+                
+            </div>
+            <div class="input"></div>
+            <div class="button"> <button onclick="atm()"></button></div>
+
+        </div>
+    </div>
+
+    <script>
+        let output = 1000;
+        document.getElementById("display").innerHTML = balance;
+
+        function atm(){
+            let balance = document.getElementById("").value;
+            output = output - Number(balance)
+            document.getElementById("display").innerHTML = output
+
+        }
+    </script>
+</body>
+</html>

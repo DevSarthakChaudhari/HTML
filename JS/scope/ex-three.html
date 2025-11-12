@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example Three</title>
+</head>
+<body>
+    <h3>Current Balance:</h3>
+    <h3 id="display"></h3>
+    <input type="number" id="input" placeholder="">
+    <button onclick="myFunction()">Submit</button>
+    <script>
+
+        let output = 0
+        document.getElementById("display").innerHTML = output;
+
+        function myFunction(){
+            let balance = document.getElementById("input").value;//500
+            
+            output = output - Number(balance)
+
+            document.getElementById("display").innerHTML = output;
+            
+        }
+    </script>
+</body>
+</html>
