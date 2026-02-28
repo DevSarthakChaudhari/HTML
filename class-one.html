@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Royal Touch Salon</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background:url('https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1') no-repeat center center/cover;
+    background-attachment: fixed;
+    color:white;
+}
+
+.overlay{
+    background:rgba(0,0,0,0.65);
+    min-height:100vh;
+    padding:40px 20px;
+}
+
+header{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+header h1{
+    font-size:40px;
+    font-weight:700;
+    letter-spacing:2px;
+}
+
+header p{
+    font-size:18px;
+    margin-top:10px;
+    color:#f1c40f;
+}
+
+.section{
+    max-width:900px;
+    margin:20px auto;
+    background:rgba(255,255,255,0.1);
+    padding:25px;
+    border-radius:15px;
+    backdrop-filter:blur(10px);
+}
+
+.section h2{
+    margin-bottom:15px;
+    color:#f1c40f;
+}
+
+.services ul{
+    list-style:none;
+}
+
+.services li{
+    padding:8px 0;
+    border-bottom:1px solid rgba(255,255,255,0.2);
+}
+
+form input, form select{
+    width:100%;
+    padding:10px;
+    margin:10px 0;
+    border:none;
+    border-radius:8px;
+}
+
+button{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:8px;
+    background:linear-gradient(45deg,#f1c40f,#e67e22);
+    color:black;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    transform:scale(1.05);
+}
+
+.footer{
+    text-align:center;
+    margin-top:40px;
+    font-size:14px;
+    opacity:0.8;
+}
+
+.success{
+    margin-top:15px;
+    color:#00ffcc;
+    font-weight:bold;
+    display:none;
+}
+</style>
+</head>
+
+<body>
+
+<div class="overlay">
+
+<header>
+    <h1>💎 Ankush M Salon</h1>
+    <p>Where Style Meets Perfection</p>
+</header>
+
+<div class="section about">
+    <h2>About Us</h2>
+    <p>
+        Royal Touch Salon is a premium beauty and grooming studio offering world-class 
+        hair styling, skincare treatments, and luxury grooming services. 
+        Our expert professionals ensure a relaxing and satisfying experience.
+    </p>
+</div>
+
+<div class="section services">
+    <h2>Our Services</h2>
+    <ul>
+        <li>💇 Hair Cut - ₹300</li>
+        <li>💆 Hair Spa - ₹900</li>
+        <li>💄 Facial Treatment - ₹1500</li>
+        <li>🧔 Beard Styling - ₹250</li>
+        <li>💅 Manicure & Pedicure - ₹1200</li>
+    </ul>
+</div>
+
+<div class="section booking">
+    <h2>Book Appointment</h2>
+    <form id="bookingForm">
+        <input type="text" placeholder="Your Name" required>
+        <input type="tel" placeholder="Mobile Number" required>
+        <select required>
+            <option value="">Select Service</option>
+            <option>Hair Cut</option>
+            <option>Hair Spa</option>
+            <option>Facial</option>
+            <option>Beard Styling</option>
+            <option>Manicure & Pedicure</option>
+        </select>
+        <input type="date" required>
+        <button type="submit">Confirm Booking</button>
+    </form>
+    <div class="success" id="successMsg">
+        ✅ Your appointment has been successfully booked!
+    </div>
+</div>
+
+<div class="section contact">
+    <h2>Contact & Location</h2>
+    <p>📍 Address: Plot,Thanegaon,near Karanja</p>
+    <p>📞 Phone: +91 80100 57408</p>
+    <p>🕒 Timings: 10:00 AM – 8:00 PM (Mon–Sun)</p>
+</div>
+
+<div class="footer">
+    © 2026 Royal Touch Salon | Designed by Sarthak 🚀
+</div>
+
+</div>
+
+<script>
+document.getElementById("bookingForm").addEventListener("submit", function(e){
+    e.preventDefault();
+    document.getElementById("successMsg").style.display = "block";
+});
+</script>
+
+</body>
+</html>
